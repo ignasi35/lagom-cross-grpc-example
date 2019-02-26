@@ -2,6 +2,12 @@
 
 This project is WIP.
 
+```
+rm -rf ~/.ivy2/{cache,local}/com.example/hello*
+find . -name target | xargs rm -rf
+sbt ";hello-api-grpc/publishLocal;update;compile"
+```
+
 
 ## Sample license
 
